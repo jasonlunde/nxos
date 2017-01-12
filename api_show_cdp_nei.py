@@ -1,12 +1,13 @@
+import sys
 import requests
 import json
 
 """
 Setup the API parameters to pull the CDP Data
 """
-url=hostname'/ins'
-switchuser=uname
-switchpassword=pword
+url = 'http://' +  sys.argv[1] + '/ins'
+switchuser = sys.argv[2]
+switchpassword = sys.argv[3]
 
 myheaders={'content-type':'application/json-rpc'}
 payload=[
